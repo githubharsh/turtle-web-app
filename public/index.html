@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<title>Web</title>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
+
+</head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+  <center>
+    <div id="container">
+      <div id=canvascont>
+        <svg height="400" width="680">
+        <path id="lineAB" d="M 50 250" stroke="red" stroke-width="3" fill-opacity="0" />
+        <path id="turtle" d="M 50 250 l 0 0 l -10 -10 l 10 10 l -10 10" stroke="red" stroke-width="3" fill-opacity="0" transform="translate(0)"/>
+      </svg>
+      </div>
+
+      <div="area2">
+        <h1>commands</h1>
+        <p>To draw line: fd length(in pixels);to simply move turtle without drawing:mv length(in pixels); To rotate: rt angle(in degree) To change color:color-name col;after mv command color set to red again </p>
+        <div>
+          <textarea id="txarea" placeholder="Enter Commands"></textarea>
+        </div>
+
+    </div>
+  </center>
+
+  <script src="/script.js">
+  </script>
+  <script src="/math.js">
+  </script>
+</body>
+
+</html>
